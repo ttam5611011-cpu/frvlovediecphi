@@ -1,84 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>NGUYEN BACH DUONG</title>
-    <meta property="og:title" content="NGUYEN BACH DUONG HOT SPAM">
-    <meta property="og:description" content="FROM : ANH EM HOT SPAM 1">
-    <meta property="og:image" content="https://i.imgur.com/8K5n7e6.png">
-    <meta name="theme-color" content="#4ade80">
-    <meta property="og:type" content="website">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Neon Sweep</title>
 
-    <style>
-        body { background: #000; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: sans-serif; }
-        
-        /* Khung bên ngoài */
-        .card { 
-            background: #1a1a1a; 
-            border: 1px solid #333; 
-            border-radius: 10px; 
-            padding: 20px; 
-            width: 350px; 
-            height: 250px; 
-            overflow: hidden; 
-            position: relative;
-        }
+<style>
+*{
+  box-sizing:border-box;
+}
 
-        /* Hiệu ứng chạy chữ */
-        .scroll-box {
-            animation: moveUp 8s linear infinite;
-        }
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#1f2230;
+  font-family:monospace;
+}
 
-        @keyframes moveUp {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-50%); }
-        }
+.frame{
+  width:min(760px,92vw);
+  background:#2a2d3c;
+  border-radius:18px;
+  padding:18px;
+}
 
-        .row { 
-            display: flex; 
-            justify-content: space-between; 
-            color: #4ade80; 
-            font-weight: bold; 
-            font-size: 13px; 
-            line-height: 2; 
-            text-transform: uppercase;
-        }
+.panel{
+  background:#030405;
+  border-radius:28px;
+  padding:24px 28px;
+  overflow:hidden;
+}
 
-        .blue { color: #3b82f6; } /* Màu xanh dương cho chữ Master */
+.rainbow-text,
+.sub-text{
+  position:relative;
+  font-weight:700;
+  white-space:nowrap;
+  overflow:hidden;
+  line-height:1.42;
+  color:#0aa7ff;
+  font-size:clamp(18px,2.2vw,31px);
+}
 
-        .footer { 
-            position: absolute; bottom: 0; left: 0; width: 100%;
-            background: #1a1a1a; padding: 15px 20px; 
-            border-top: 1px solid #333; color: #aaa; font-size: 14px;
-        }
-    </style>
+.rainbow-text::before,
+.sub-text::before{
+  content:attr(data-text);
+  position:absolute;
+  inset:0;
+
+  background:linear-gradient(
+    90deg,
+    #0aa7ff 0%,
+    #0aa7ff 34%,
+    #ffffff 50%,
+    #22ff6f 66%,
+    #22ff6f 100%
+  );
+
+  background-size:260% 100%;
+  background-position:-180% 0;
+
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+
+  filter:
+    drop-shadow(0 0 4px rgba(0,180,255,.45))
+    drop-shadow(0 0 7px rgba(40,255,120,.30));
+
+  animation: sweep 0.32s linear infinite;
+}
+
+.sub-text{
+  margin-top:12px;
+  font-size:clamp(16px,1.9vw,24px);
+}
+
+@keyframes sweep{
+  from{
+    background-position:-180% 0;
+  }
+  to{
+    background-position:180% 0;
+  }
+}
+</style>
 </head>
+
 <body>
+  <div class="frame">
+    <div class="panel">
+      <div class="rainbow-text" data-text="NGUYEN BACH DUONG - MASTER ZALO">NGUYEN BACH DUONG - MASTER ZALO</div>
+      <div class="rainbow-text" data-text="NGUYEN BACH DUONG - MASTER ZALO">NGUYEN BACH DUONG - MASTER ZALO</div>
+      <div class="rainbow-text" data-text="NGUYEN BACH DUONG - MASTER ZALO">NGUYEN BACH DUONG - MASTER ZALO</div>
+      <div class="rainbow-text" data-text="NGUYEN BACH DUONG - MASTER ZALO">NGUYEN BACH DUONG - MASTER ZALO</div>
+      <div class="rainbow-text" data-text="NGUYEN BACH DUONG - MASTER ZALO">NGUYEN BACH DUONG - MASTER ZALO</div>
+      <div class="rainbow-text" data-text="NGUYEN BACH DUONG - MASTER ZALO">NGUYEN BACH DUONG - MASTER ZALO</div>
+      <div class="rainbow-text" data-text="NGUYEN BACH DUONG - MASTER ZALO">NGUYEN BACH DUONG - MASTER ZALO</div>
 
-    <div class="card">
-        <div class="scroll-box">
-            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
-            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
-            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
-            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
-            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
-            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
-            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
-            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
-            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
-            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
-            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
-            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
-            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
-            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
-            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
-            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
-        </div>
-
-        <div class="footer">
-            From : <b style="color:white">Anh Em Hot Spam 1</b>
-        </div>
+      <div class="sub-text" data-text="FROM : TU LIEU MAT">FROM : TU LIEU MAT</div>
     </div>
-
+  </div>
 </body>
 </html>
