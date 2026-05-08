@@ -2,119 +2,81 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>NGUYEN BACH DUONG - MASTER DISCORD</title>
+    <title>NGUYEN BACH DUONG</title>
     <meta property="og:title" content="NGUYEN BACH DUONG HOT SPAM">
     <meta property="og:description" content="FROM : ANH EM HOT SPAM 1">
-    <meta property="og:image" content="https://i.imgur.com/8K5n7e6.png"> 
-    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.imgur.com/8K5n7e6.png">
     <meta name="theme-color" content="#4ade80">
+    <meta property="og:type" content="website">
 
     <style>
-        body {
-            background-color: #000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            overflow: hidden;
-        }
-
-        /* Khung Card */
-        .card {
-            background-color: #1a1a1a;
-            border: 1px solid #333;
-            border-radius: 12px;
-            padding: 20px;
-            width: 350px;
-            height: 250px; /* Cố định chiều cao để tạo hiệu ứng cuộn bên trong */
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
-            position: relative;
-        }
-
-        /* Vùng chứa chữ chạy - Có thuộc tính ẩn phần thừa */
-        .marquee-viewport {
-            flex-grow: 1;
+        body { background: #000; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: sans-serif; }
+        
+        /* Khung bên ngoài */
+        .card { 
+            background: #1a1a1a; 
+            border: 1px solid #333; 
+            border-radius: 10px; 
+            padding: 20px; 
+            width: 350px; 
+            height: 250px; 
             overflow: hidden; 
             position: relative;
         }
 
-        /* Danh sách chữ lặp lại */
-        .content {
-            display: flex;
-            flex-direction: column;
-            animation: scrollUp 10s linear infinite; /* Hiệu ứng chạy lên */
+        /* Hiệu ứng chạy chữ */
+        .scroll-box {
+            animation: moveUp 8s linear infinite;
         }
 
-        /* Animation cuộn lên */
-        @keyframes scrollUp {
+        @keyframes moveUp {
             0% { transform: translateY(0); }
-            100% { transform: translateY(-50%); } /* Chạy lên một nửa danh sách để tạo vòng lặp mượt */
+            100% { transform: translateY(-50%); }
         }
 
-        .line {
-            display: flex;
-            justify-content: space-between;
-            color: #4ade80;
-            font-weight: 700;
-            font-size: 13px;
-            line-height: 2; /* Khoảng cách giữa các dòng */
+        .row { 
+            display: flex; 
+            justify-content: space-between; 
+            color: #4ade80; 
+            font-weight: bold; 
+            font-size: 13px; 
+            line-height: 2; 
             text-transform: uppercase;
-            white-space: nowrap;
         }
 
-        .highlight-blue {
-            color: #3b82f6;
-        }
+        .blue { color: #3b82f6; } /* Màu xanh dương cho chữ Master */
 
-        /* Phần chân dòng From cố định ở dưới */
-        .footer {
-            margin-top: 10px;
-            padding-top: 10px;
-            border-top: 1px solid #333;
-            color: #9ca3af;
-            font-size: 14px;
-            background-color: #1a1a1a;
-            z-index: 10;
-        }
-
-        .from-text {
-            color: #fff;
-            font-weight: bold;
+        .footer { 
+            position: absolute; bottom: 0; left: 0; width: 100%;
+            background: #1a1a1a; padding: 15px 20px; 
+            border-top: 1px solid #333; color: #aaa; font-size: 14px;
         }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <div class="marquee-viewport">
-            <div class="content">
-                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
-                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
-                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
-                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
-                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
-                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
-                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
-                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
-                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
-                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
-                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
-                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
-                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
-                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
-                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
-                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
-            </div>
+        <div class="scroll-box">
+            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
+            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
+            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
+            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
+            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
+            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
+            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
+            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
+            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
+            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
+            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
+            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
+            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
+            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
+            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
+            <div class="row">NGUYEN BACH DUONG <div class="blue">- MASTER</div></div>
         </div>
 
         <div class="footer">
-            From : <span class="from-text">Anh Em Hot Spam 1</span>
+            From : <b style="color:white">Anh Em Hot Spam 1</b>
         </div>
     </div>
 
