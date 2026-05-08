@@ -7,9 +7,11 @@
     <title>NGUYEN BACH DUONG - MASTER DISCORD</title>
     <meta property="og:title" content="NGUYEN BACH DUONG HOT SPAM">
     <meta property="og:description" content="FROM : ANH EM HOT SPAM 1">
-    <meta property="og:image" content="https://i.imgur.com/8K5n7e6.png"> <meta property="og:type" content="website">
-    <meta name="theme-color" content="#4ade80"> <style>
-        /* GIAO DIỆN WEB */
+    <meta property="og:image" content="https://i.imgur.com/8K5n7e6.png"> 
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#4ade80">
+
+    <style>
         body {
             background-color: #000;
             display: flex;
@@ -18,46 +20,67 @@
             height: 100vh;
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
         }
 
-        /* Khung Card bo góc giống trong ảnh */
+        /* Khung Card */
         .card {
             background-color: #1a1a1a;
             border: 1px solid #333;
             border-radius: 12px;
-            padding: 25px;
-            width: 380px; 
+            padding: 20px;
+            width: 350px;
+            height: 250px; /* Cố định chiều cao để tạo hiệu ứng cuộn bên trong */
+            display: flex;
+            flex-direction: column;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+            position: relative;
         }
 
-        /* Nội dung chữ lặp lại */
+        /* Vùng chứa chữ chạy - Có thuộc tính ẩn phần thừa */
+        .marquee-viewport {
+            flex-grow: 1;
+            overflow: hidden; 
+            position: relative;
+        }
+
+        /* Danh sách chữ lặp lại */
         .content {
-            color: #4ade80; /* Màu xanh lá nhạt */
-            font-weight: 700;
-            font-size: 13px;
-            line-height: 1.8;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            animation: scrollUp 10s linear infinite; /* Hiệu ứng chạy lên */
+        }
+
+        /* Animation cuộn lên */
+        @keyframes scrollUp {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-50%); } /* Chạy lên một nửa danh sách để tạo vòng lặp mượt */
         }
 
         .line {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 2px;
+            color: #4ade80;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 2; /* Khoảng cách giữa các dòng */
+            text-transform: uppercase;
             white-space: nowrap;
         }
 
         .highlight-blue {
-            color: #3b82f6; /* Màu xanh dương cho chữ MASTER */
+            color: #3b82f6;
         }
 
-        /* Phần chân dòng From */
+        /* Phần chân dòng From cố định ở dưới */
         .footer {
-            margin-top: 20px;
+            margin-top: 10px;
             padding-top: 10px;
             border-top: 1px solid #333;
             color: #9ca3af;
             font-size: 14px;
+            background-color: #1a1a1a;
+            z-index: 10;
         }
 
         .from-text {
@@ -69,18 +92,25 @@
 <body>
 
     <div class="card">
-        <div class="content">
-            <div class="line"><span>NGUYEN BACH DUONG HOT SPAM</span> <span class="highlight-blue">- MASTER</span></div>
-            <div class="line"><span>NGUYEN BACH DUONG HOT SPAM</span> <span class="highlight-blue">- MASTER</span></div>
-            <div class="line"><span>NGUYEN BACH DUONG HOT SPAM</span> <span class="highlight-blue">- MASTER</span></div>
-            <div class="line"><span>NGUYEN BACH DUONG HOT SPAM</span> <span class="highlight-blue">- MASTER</span></div>
-            <div class="line"><span>NGUYEN BACH DUONG HOT SPAM</span> <span class="highlight-blue">- MASTER</span></div>
-            <div class="line"><span>NGUYEN BACH DUONG HOT SPAM</span> <span class="highlight-blue">- MASTER</span></div>
-            <div class="line"><span>NGUYEN BACH DUONG HOT SPAM</span> <span class="highlight-blue">- MASTER</span></div>
-            <div class="line"><span>NGUYEN BACH DUONG HOT SPAM</span> <span class="highlight-blue">- MASTER</span></div>
-            <div class="line"><span>NGUYEN BACH DUONG HOT SPAM</span> <span class="highlight-blue">- MASTER</span></div>
-            <div class="line"><span>NGUYEN BACH DUONG HOT SPAM</span> <span class="highlight-blue">- MASTER</span></div>
-            <div class="line"><span>NGUYEN BACH DUONG HOT SPAM</span> <span class="highlight-blue">- MASTER</span></div>
+        <div class="marquee-viewport">
+            <div class="content">
+                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
+                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
+                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
+                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
+                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
+                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
+                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
+                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
+                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
+                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
+                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
+                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
+                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
+                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
+                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
+                <div class="line"><span>NGUYEN BACH DUONG</span> <span class="highlight-blue">- MASTER DISCORD</span></div>
+            </div>
         </div>
 
         <div class="footer">
